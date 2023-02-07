@@ -1,0 +1,32 @@
+{
+  "name": "purescript-concur-benchmarks",
+  "version": "0.1.0",
+  "description": "JS Framework Benchmarks for Purescript-Concur.",
+  "main": "index.js",
+  "js-framework-benchmark": {
+      "frameworkVersion": "0.1",
+      "frameworkHomeURL": "https://github.com/purescript-concur/"
+  },
+  "scripts": {
+    "postinstall": "spago build",
+    "build": "spago build",
+    "build-prod": "spago bundle-app --to bundle.js",
+    "test": "spago test",
+    "start": "parcel dev/index.html --open",
+    "watch": "parcel watch dev/index.html",
+    "clean": "rimraf .cache .spago .psci_modules output .pulp-cache prod dist"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.5",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10",
+    "purescript": "^0.15.7",
+    "rimraf": "^3.0.2",
+    "spago": "^0.20.9"
+  }
+}
